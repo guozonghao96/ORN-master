@@ -4,7 +4,7 @@ Baseline code for Oriented Response Networks[[Paper]](https://arxiv.org/pdf/1701
 Please follow the instruction below to install it and run the experiment demo.
 
 ### Prerequisites
-* Linux (tested on ubuntu 16.04LTS)
+* Linux (Ubuntu 16.04LTS)
 * NVIDIA-1080ti + CUDA-9.0 + CuDNN7.0
 * Pytorch-1.0.0 + Torchvision
 
