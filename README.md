@@ -12,7 +12,7 @@ Please follow the instruction below to install it and run the experiment demo.
 1.install the dependencies (required by the demo code):
    * [pillow](https://python-pillow.org): `pip install Pillow`
 
-2. clone the this branch: 
+2.clone the this branch: 
 
   ```bash
   # git version must be greater than 1.9.10
@@ -27,7 +27,7 @@ Please follow the instruction below to install it and run the experiment demo.
   python setup.py develop
   ```
 
-4. run the MNIST-Variants demo:
+4.run the MNIST-Variants demo:
 
   ```bash
   cd $DIR
