@@ -77,6 +77,7 @@ def test(epoch):
             'acc': test_acc,
             'epoch': epoch,
             'dataset': dataset,
+            'backbone': args.net,
             'net': model.state_dict()
         }
         torch.save(state, os.path.join(save_path, 'ckpt.pth'))
@@ -137,8 +138,3 @@ if __name__ == "__main__":
         test(epoch)
         # scheduler.step()
     print('Best accuracy: {:.2f}%'.format(best_test_acc))
-
-
-
-
-
