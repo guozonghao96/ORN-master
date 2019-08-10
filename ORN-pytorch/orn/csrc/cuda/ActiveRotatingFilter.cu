@@ -42,7 +42,7 @@ __global__ void MappingRotateKernel(
         
     	uint16 w = n % kW;
     	uint16 h = n / kW % kH;
-    	uint16 e = n / (kW * kH) % nRotation;
+    	uint16 e = n / (kW * kH) % nOrientation;
 		uint16 j = n / nEntry % nInputPlane;
 		uint16 i = n / nEntry / nInputPlane;
 		uint16 l = n % nEntry;
@@ -119,7 +119,7 @@ __global__ void MappingAlignKernel(
         
     	uint16 w = n % kW;
     	uint16 h = n / kW % kH;
-    	uint16 e = n / (kW * kH) % nRotation;
+    	uint16 e = n / (kW * kH) % nOrientation;
 		uint16 j = n / nEntry % nInputPlane;
 		uint16 i = n / nEntry / nInputPlane;
 		uint16 l = n % nEntry;
