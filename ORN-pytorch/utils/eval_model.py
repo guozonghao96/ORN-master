@@ -13,17 +13,15 @@ from utils import progress_bar
 parser = argparse.ArgumentParser("Pytorch MNIST Testing")
 parser.add_argument('--dataset', default='MNIST',
                     help='Dataset to test (default MNIST)')
-parser.add_argument('--net', default='orn',
-                    help='Backbone for inference')
+parser.add_argument('--model-path',
+                    help='The path of the model')
 parser.add_argument('--test-batch-size', type=int, default=1000,
                     help='Input batch size for testing (default: 1000)')
 args = parser.parse_args()
 
-data_root = '../data'
-root = '../outputs'
+data_root = 'data'
+net_dir = args.model_path
 dataset = args.dataset
-date = '2019-08-09-15:29'
-net_dir = os.path.join(root, dataset, date, 'ckpt.pth')
 
 if __name__ == '__main__':
 
@@ -33,12 +31,13 @@ if __name__ == '__main__':
     print('Net model dir: ', net_dir)
     paras = torch.load(net_dir)
     model_paras = paras['net']
+    backbone = paras['backbone']
 
-    if args.net == 'cnn':
+    if backbone == 'cnn':
         model = CNN().to(device)
         model.load_state_dict(model_paras)
         print('Backbone: CNN(baseline)')
-    elif args.net == 'orn':
+    elif backbone == 'orn':
         model = ORN().to(device)
         model.load_state_dict(model_paras)
         print('Backbone: ORN(CNN)')
