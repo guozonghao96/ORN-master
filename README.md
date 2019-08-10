@@ -39,7 +39,8 @@ Please follow the instruction below to install it and run the experiment demo.
   python main.py --net cnn --dataset MNIST-rot
   # train ORN on MNIST-rot
   python main.py --net orn --dataset MNIST-rot
-
+  ```
+  
 ## Citation 
 If you use the code in your research, please cite:
 ```bibtex
