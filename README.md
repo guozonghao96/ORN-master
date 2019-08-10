@@ -11,7 +11,7 @@ Please follow the instruction below to setup it and run the experiment demo.
 
 ### Getting started
 1. install the dependencies (required by the demo code):
-    * [pillow](https://python-pillow.org): `pip install Pillow`
+  * [pillow](https://python-pillow.org): `pip install Pillow`
 
 2. clone the this branch: 
 
