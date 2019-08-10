@@ -9,37 +9,37 @@ Please follow the instruction below to install it and run the experiment demo.
 * Pytorch-1.0.0 + Torchvision
 
 ### Getting started
-1.install the dependencies (required by the demo code):
-   * [pillow](https://python-pillow.org): `pip install Pillow`
+  1.install the dependencies (required by the demo code):
+     * [pillow](https://python-pillow.org): `pip install Pillow`
 
-2.clone the this branch: 
+  2.clone the this branch: 
 
-  ```bash
-  # git version must be greater than 1.9.10
-  git clone https://github.com/SDL-GuoZhao/ORN-master
-  ```
-  
-3.setup orn:
+    ```bash
+    # git version must be greater than 1.9.10
+    git clone https://github.com/SDL-GuoZhao/ORN-master
+    ```
 
-  ```bash
-  cd ORN-pytorch
-  export DIR=$(pwd)
-  python setup.py develop
-  ```
+  3.setup orn:
 
-4.run the MNIST-Variants demo:
+    ```bash
+    cd ORN-pytorch
+    export DIR=$(pwd)
+    python setup.py develop
+    ```
 
-  ```bash
-  cd $DIR
-  # train baseline CNN on MNIST
-  python main.py --net cnn --dataset MNIST
-  # train ORN on MNIST
-  python main.py --net orn --dataset MNIST
-  # train baseline CNN on MNIST-rot
-  python main.py --net cnn --dataset MNIST-rot
-  # train ORN on MNIST-rot
-  python main.py --net orn --dataset MNIST-rot
-  ```
+  4.run the MNIST-Variants demo:
+
+    ```bash
+    cd $DIR
+    # train baseline CNN on MNIST
+    python main.py --net cnn --dataset MNIST
+    # train ORN on MNIST
+    python main.py --net orn --dataset MNIST
+    # train baseline CNN on MNIST-rot
+    python main.py --net cnn --dataset MNIST-rot
+    # train ORN on MNIST-rot
+    python main.py --net orn --dataset MNIST-rot
+    ```
   
 ## Citation 
 If you use the code in your research, please cite:
