@@ -3,6 +3,7 @@ Baseline code for [[Oriented Response Networks]](https://arxiv.org/pdf/1701.0183
 
 Please follow the instruction below to setup it and run the experiment demo.
 
+![illustration](illustration.png)
 ### Prerequisites
 * Linux (Ubuntu 16.04LTS)
 * NVIDIA-1080ti + CUDA-9.0 + CuDNN7.0
