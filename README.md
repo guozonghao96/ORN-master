@@ -11,7 +11,7 @@ Please follow the instruction below to setup it and run the experiment demo.
 
 ### Getting started
 1. install the dependencies (required by the demo code):
-  * [pillow](https://python-pillow.org): `pip install Pillow`
+   * [pillow](https://python-pillow.org): `pip install Pillow`
 
 2. clone the this branch: 
 
@@ -32,6 +32,7 @@ Please follow the instruction below to setup it and run the experiment demo.
 
     ```bash
     cd $DIR
+    mkdir outputs
     # train baseline CNN on MNIST
     python main.py --net cnn --dataset MNIST
     # train ORN on MNIST
@@ -41,7 +42,14 @@ Please follow the instruction below to setup it and run the experiment demo.
     # train ORN on MNIST-rot
     python main.py --net orn --dataset MNIST-rot
     ```
-  
+### Evaluate model
+
+    ```bash
+    cd $DIR
+    # test model on MNIST
+    python utils/eval_model.py --model-path outputs/path_to_your_ckpt.pth --dataset MNIST
+    ```
+
 ## Citation 
 If you use the code in your research, please cite:
 ```bibtex
