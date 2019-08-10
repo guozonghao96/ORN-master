@@ -1,7 +1,7 @@
 # ORN-pytorch
-Baseline code for Oriented Response Networks[[Paper]](https://arxiv.org/pdf/1701.01833)
+Baseline code for [[Oriented Response Networks]](https://arxiv.org/pdf/1701.01833)
 
-Please follow the instruction below to install it and run the experiment demo.
+Please follow the instruction below to setup it and run the experiment demo.
 
 ### Prerequisites
 * Linux (Ubuntu 16.04LTS)
